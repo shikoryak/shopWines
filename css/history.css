@@ -1,0 +1,222 @@
+.history-description {
+    margin-top: 120px;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.shop {
+    display: flex;
+    gap: 30px;
+}
+
+.shop-red-wines,
+.shop-white-wines {
+    flex: 1;
+    height: 422px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 45px;
+}
+
+.shop-red-wines {
+    background-image: url("../img/shop-red-wines.webp");
+}
+
+.shop-white-wines {
+    background-image: url("../img/shop-white-wines.webp");
+}
+
+.shop h3 {
+    font-size: 32px;
+    line-height: 32px;
+}
+
+.history-description .line {
+    height: 2px;
+    width: 48px;
+    background-color: #c8693a;
+    margin: 15px 0;
+}
+
+.shop .filled-button {
+    font-size: 15px;
+    margin-top: 40px;
+}
+
+.discount {
+    width: 100%;
+    background-color: rgb(200, 105, 58);
+    position: relative;
+    padding: 60px 45px;
+    margin-top: 50px;
+}
+
+.discount-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    filter: opacity(20%);
+}
+
+.discount .unfilled-button {
+    font-size: 16px;
+    margin-top: 40px;
+}
+
+.discount h2 {
+    margin-bottom: 30px;
+    font-size: 41px;
+}
+
+.discount-content {
+    z-index: 1;
+    position: relative;
+}
+
+.title-info {
+    text-align: center;
+}
+
+.title-info .pre-title,
+.title-info img {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.title-info .ui-title_1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.awards {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.awards-description {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 3fr;
+    align-items: center;
+    gap: 30px;
+    margin-top: 50px;
+
+}
+
+.awards-description-title {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.awards-description-date {
+    font-size: 22px;
+    font-weight: 400;
+    font-family: 'Prata', serif;
+}
+
+.awards-description-text {
+    font-size: 16px;
+    color: rgb(137, 128, 130);
+    line-height: 25px;
+}
+
+.title-info p {
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 50px;
+}
+
+.slider {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    line-height: 25px;
+    color: rgb(137, 128, 130);
+}
+
+.slide {
+    flex: 0 1 740px;
+}
+
+.arrow-left,
+.arrow-right {
+    width: 30px;
+    height: 30px;
+    background: none;
+    cursor: pointer;
+}
+
+.arrow-left {
+    transform: rotate(180deg);
+}
+
+.slider-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.slider-dots .dot {
+    width: 30px;
+    height: 30px;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-dots .dot::before {
+    display: block;
+    content: "";
+    background: #c8693a;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    opacity: 0.25;
+}
+.slider-dots .dot:hover:before,
+.slider-dots .dot.active:before {
+    opacity: 1;
+}
+
+
+@media screen and (max-width: 760px) {
+    .shop {
+        flex-direction: column;
+    }
+
+    .discount h2 {
+        font-size: 34px;
+    }
+
+    .title-info .pre-title {
+        font-size: 14px;
+    }
+
+    .title-info .ui-title_1 {
+        font-size: 34px;
+    }
+
+    .awards-description {
+        grid-template-columns: 1fr;
+    }
+
+    .awards-description img {
+        width: 100%;
+    }
+    .shop-red-wines, .shop-white-wines {
+        background-position: center 73%;
+    }
+}
